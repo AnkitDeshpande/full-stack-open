@@ -1,12 +1,15 @@
 import Part from "./Part";
 
-const Content = (props) => {
+const Content = ({ parts }) => {
+    //parts.forEach(element=>console.log(element.name));
     return (
-        <div>
-            <Part part1={props.part1} exercise1={props.exercise1}/>
-            <Part part1={props.part2} exercise1={props.exercise2}/>
-            <Part part1={props.part3} exercise1={props.exercise3}/>
-        </div>
+        parts.map(element => {
+            console.log(element);
+            return (<div>
+                <Part part={element.name} exercise={element.exercises} />
+            </div>);
+        })
+
     );
 }
 

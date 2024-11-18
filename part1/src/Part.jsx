@@ -1,9 +1,10 @@
-const Part = ({part1, exercises1}) => {
-    return (
-        <p>
-        {part1} {exercises1}
-      </p>
-    );
+const Part = ({ part, exercise }) => {
+  console.log("part and excersise ->", part, exercise)
+  return (
+    <p>
+      {part} {exercise}
+    </p>
+  );
 }
 
 export default Part;
