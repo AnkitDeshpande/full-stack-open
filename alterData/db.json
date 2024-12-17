@@ -18,12 +18,12 @@
     {
       "id": "e7dd",
       "content": "Adding new note test",
-      "important": true
+      "important": false
     },
     {
       "id": "845e",
       "content": "Addind 5th",
-      "important": false
+      "important": true
     },
     {
       "id": "0904",
