@@ -14,8 +14,8 @@ const App = () => {
   useEffect(() => {
     axios.get("http://localhost:3001/persons")
       .then(res => res.data)
-      .then(data => { 
-        console.log(data) 
+      .then(data => {
+        console.log(data)
         setPersons(data);
       });
   }, []);
@@ -54,6 +54,21 @@ const App = () => {
     setFilterTerm(event.target.value);
   }
 
+  const handleDelete = (id) => {
+    if (confirm("Do you wanna delete this person?")) {
+      axios.delete(`http://localhost:3001/persons/${id}`)
+        .then(() => {
+          setPersons((prevPersons) => prevPersons.filter(person => person.id !== id));
+          console.log('Deleted successfully');
+        })
+        .catch((error) => {
+          console.error('Error deleting the person:', error);
+          alert('Failed to delete the person.');
+        });
+      console.log('deleted');
+    }
+  }
+
   return (
     <div>
       <h2>Phonebook</h2>
@@ -66,7 +81,7 @@ const App = () => {
 
       <h3>Numbers</h3>
 
-      <Persons persons={persons} filterTerm={filterTerm} />
+      <Persons persons={persons} filterTerm={filterTerm} handleDelete={handleDelete}/>
     </div>
   )
 }
