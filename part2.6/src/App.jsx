@@ -54,13 +54,6 @@ const App = () => {
     setFilterTerm(event.target.value);
   }
 
-  const filterPerson = () => {
-    const filtered = persons.filter((per) => per.name.toLowerCase() === event.target.value);
-    console.log(filtered);
-    setFilterTerm('');
-    setPersons(filtered);
-  }
-
   return (
     <div>
       <h2>Phonebook</h2>
