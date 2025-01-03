@@ -5,4 +5,5 @@ const Filter = ({ filterTerm, filter }) => {
         </div>
     );
 }
+
 export default Filter;
