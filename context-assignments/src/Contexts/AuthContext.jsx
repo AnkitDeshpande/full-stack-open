@@ -8,10 +8,6 @@ export const AuthContextProvider = ({ children }) => {
 
     const [auth, setAuth] = useState(false);
 
-    const login = () => {
-
-    }
-
     const toggleAuth = () => {
         console.log("auth before : ", auth)
         if (!auth) {
@@ -21,15 +17,17 @@ export const AuthContextProvider = ({ children }) => {
             }).then((res) => {
                 console.log(res.data)
                 setAuth(true);
+                localStorage.setItem("Token", JSON.stringify(res.data.token));
                 return res.json
             })
         }
 
+        localStorage.clear();
         setAuth(prevAuth => !prevAuth);
         console.log("auth after : ", auth)
     }
 
-    return <AuthContext.Provider value={{ auth, login, toggleAuth }} >
+    return <AuthContext.Provider value={{ auth, toggleAuth }} >
         {children}
     </AuthContext.Provider >
 }
