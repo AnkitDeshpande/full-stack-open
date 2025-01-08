@@ -81,7 +81,7 @@ const App = () => {
 
       <h3>Numbers</h3>
 
-      <Persons persons={persons} filterTerm={filterTerm} handleDelete={handleDelete}/>
+      <Persons persons={persons} filterTerm={filterTerm} handleDelete={handleDelete} />
     </div>
   )
 }
