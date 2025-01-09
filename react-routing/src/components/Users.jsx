@@ -16,7 +16,7 @@ const Users = () => {
         <div>
             {users.map((user) =>
                 <p key={user.id}>
-                    <Link to={`/users/${user.id}`}>{user.id}. {user.first_name} {user.first_name}
+                    <Link to={`/users/${user.id}`}>{user.id}. {user.first_name} {user.last_name}
                     </Link>
                 </p>)}
         </div>
