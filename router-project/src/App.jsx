@@ -1,24 +1,22 @@
-import { Route, Routes } from 'react-router-dom'
-import './App.css'
-import Clothing from './Components/Clothing'
-import Electronics from './Components/Electronics'
-import Health from './Components/Health'
-import Kitchen from './Components/Kitchen'
-import { Navbar } from './Components/Navbar'
-import Sports from './Components/Sports'
+import AllRoutes from './Components/AllRoutes';
+import Banner from './Components/Banner';
+import Footer from './Components/Footer';
+import { Navbar } from './Components/Navbar';
 
 function App() {
 
   return (
-    <div>
+    <div style={{
+      border: "1px solid blue",
+      width: "100%",
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'center'
+    }}>
       <Navbar />
-      <Routes>
-        <Route path='/electronics' element={<Electronics />}></Route>
-        <Route path='/clothing' element={<Clothing />}></Route>
-        <Route path='/health' element={<Health />}></Route>
-        <Route path='/kitchen' element={<Kitchen />}></Route>
-        <Route path='/sports' element={<Sports />}></Route>
-      </Routes>
+      <Banner />
+      <AllRoutes />
+      <Footer />
     </div>
   )
 }

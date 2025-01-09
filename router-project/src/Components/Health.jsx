@@ -1,7 +1,14 @@
 
 const Health = () => {
   return (
-    <div>Health</div>
+    <div style={{
+      border: "1px solid teal",
+      padding: "10px",
+      maxWidth: "100%",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center"
+  }}>Health</div>
   )
 }
 
