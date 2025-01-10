@@ -1,24 +1,31 @@
+import { useState } from 'react';
 import AllRoutes from './Components/AllRoutes';
 import Banner from './Components/Banner';
 import Footer from './Components/Footer';
-import { Navbar } from './Components/Navbar';
+import { MyNavbar } from './Components/MyNavbar';
 
 function App() {
+  const [isBannerVisible, setIsBannerVisible] = useState(true);
+  const hideBanner = () => setIsBannerVisible(false);
 
   return (
     <div style={{
-      border: "1px solid blue",
       width: "100%",
       display: 'flex',
       flexDirection: 'column',
-      justifyContent: 'center'
     }}>
-      <Navbar />
-      <Banner />
+      {/* Pass the hideBanner function to the Banner component */}
+      {isBannerVisible && <Banner onClose={hideBanner} />}
+
+      {/* Conditionally apply marginTop based on banner visibility */}
+      <div style={{ marginTop: isBannerVisible ? '70px' : '0px' }}>
+        <MyNavbar />
+      </div>
+
       <AllRoutes />
       <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
