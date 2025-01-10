@@ -1,0 +1,96 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Small Cotton Pizza",
+      "description": "Savor the sweet essence in our Hat, designed for quixotic culinary adventures",
+      "price": "564.97",
+      "category": "Games",
+      "image": "https://picsum.photos/seed/AbaHv4wRO/147/609",
+      "stock": 23
+    },
+    {
+      "id": 2,
+      "name": "Awesome Metal Cheese",
+      "description": "Featuring Dubnium-enhanced technology, our Computer offers unparalleled new performance",
+      "price": "727.39",
+      "category": "Jewelry",
+      "image": "https://picsum.photos/seed/x66PP/3592/3635",
+      "stock": 85
+    },
+    {
+      "id": 3,
+      "name": "Modern Bronze Shirt",
+      "description": "New silver Sausages with ergonomic design for clean comfort",
+      "price": "764.69",
+      "category": "Health",
+      "image": "https://picsum.photos/seed/RZJXQPSuYF/3609/1793",
+      "stock": 91
+    },
+    {
+      "id": 4,
+      "name": "Intelligent Plastic Gloves",
+      "description": "Featuring Arsenic-enhanced technology, our Salad offers unparalleled easy performance",
+      "price": "586.36",
+      "category": "Toys",
+      "image": "https://picsum.photos/seed/pOUfg7/2060/3024",
+      "stock": 43
+    },
+    {
+      "id": 5,
+      "name": "Bespoke Metal Pants",
+      "description": "Discover the smoggy new Gloves with an exciting mix of Granite ingredients",
+      "price": "91.49",
+      "category": "Music",
+      "image": "https://loremflickr.com/901/2027?lock=5895250015961165",
+      "stock": 79
+    },
+    {
+      "id": 6,
+      "name": "Modern Rubber Chicken",
+      "description": "Ergonomic Bacon made with Concrete for all-day acidic support",
+      "price": "277.39",
+      "category": "Baby",
+      "image": "https://loremflickr.com/3380/3816?lock=8753086048215922",
+      "stock": 92
+    },
+    {
+      "id": 7,
+      "name": "Awesome Frozen Table",
+      "description": "Our penguin-friendly Shirt ensures small comfort for your pets",
+      "price": "399.05",
+      "category": "Books",
+      "image": "https://picsum.photos/seed/k2nzD7pEc/2490/2018",
+      "stock": 71
+    },
+    {
+      "id": 8,
+      "name": "Sleek Fresh Chips",
+      "description": "Stylish Chair designed to make you stand out with radiant looks",
+      "price": "143.09",
+      "category": "Electronics",
+      "image": "https://loremflickr.com/224/3681?lock=5719329477894112",
+      "stock": 5
+    },
+    {
+      "id": 9,
+      "name": "Practical Metal Tuna",
+      "description": "Experience the salmon brilliance of our Sausages, perfect for uncomfortable environments",
+      "price": "247.29",
+      "category": "Grocery",
+      "image": "https://picsum.photos/seed/ehQqNym43/3596/1086",
+      "stock": 38
+    },
+    {
+      "id": 10,
+      "name": "Handmade Fresh Salad",
+      "description": "Larkin Group's most advanced Gloves technology increases unwilling capabilities",
+      "price": "101.46",
+      "category": "Electronics",
+      "image": "https://picsum.photos/seed/3mK0jWzAP/1554/2328",
+      "stock": 96
+    }
+  ],
+  "users": [],
+  "orders": []
+}

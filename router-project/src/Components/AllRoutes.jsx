@@ -3,11 +3,13 @@ import Clothing from "./Clothing"
 import Electronics from "./Electronics"
 import Health from "./Health"
 import Kitchen from "./Kitchen"
+import ProductDetails from "./ProductDetails"
 import Sports from "./Sports"
 
 const AllRoutes = () => {
     return (
         <Routes>
+            <Route path='/product/:id' element={<ProductDetails />}></Route>
             <Route path='/electronics' element={<Electronics />}></Route>
             <Route path='/clothings' element={<Clothing />}></Route>
             <Route path='/health' element={<Health />}></Route>

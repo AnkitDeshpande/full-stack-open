@@ -1,7 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { useContext } from 'react';
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { Link, NavLink } from 'react-router-dom';
 import basket from '../../basket.png';
+import { CartContext } from '../contexts/CartContext';
 
 export const MyNavbar = () => {
     const nav = [
@@ -12,6 +14,8 @@ export const MyNavbar = () => {
         { id: 5, title: "Sports & Outdoors", path: "/sports" },
         { id: 6, title: "Home", path: "/" }
     ];
+
+    const { value } = useContext(CartContext);
 
     return (
         <Navbar bg="light" expand="lg">
@@ -31,17 +35,41 @@ export const MyNavbar = () => {
                             ))}
                         </NavDropdown>
                         <Nav.Link as={NavLink} to="/cart">
-                            <img
-                                src={basket}
-                                alt="Cart"
-                                style={{
-                                    width: "40px",
-                                    height: "40px",
-                                    border: "1px solid black",
-                                    maxHeight: "100%",
-                                }}
-                            />
+                            <div style={{ position: 'relative', display: 'inline-block' }}>
+                                <img
+                                    src={basket}
+                                    alt="Cart"
+                                    style={{
+                                        width: "40px",
+                                        height: "40px",
+                                        border: "1px solid black",
+                                        maxHeight: "100%",
+                                    }}
+                                />
+                                {/* Cart count badge */}
+                                {value > 0 && (
+                                    <div
+                                        style={{
+                                            position: 'absolute',
+                                            top: '-5px',
+                                            right: '-5px',
+                                            backgroundColor: 'teal',
+                                            color: 'white',
+                                            borderRadius: '50%',
+                                            width: '20px',
+                                            height: '20px',
+                                            textAlign: 'center',
+                                            fontSize: '12px',
+                                            fontWeight: 'bold',
+                                            lineHeight: '20px',
+                                        }}
+                                    >
+                                        {value}
+                                    </div>
+                                )}
+                            </div>
                         </Nav.Link>
+
                     </Nav>
                 </Navbar.Collapse>
             </Container>
