@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "fake": "^0.2.2",
-    "faker": "^6.6.6"
+    "faker": "^6.6.6",
+    "redux": "^5.0.1"
   }
 }
