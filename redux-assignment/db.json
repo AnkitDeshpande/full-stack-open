@@ -1,38 +1,23 @@
 {
   "todos": [
     {
-      "id": "1737105962298",
-      "title": "Learn React",
-      "completed": false
-    },
-    {
       "id": "1737105962299",
       "title": "Build a Todo App",
-      "completed": false
+      "completed": true
     },
     {
       "id": "1737105962300",
       "title": "Study Redux",
-      "completed": false
+      "completed": true
     },
     {
       "id": "1737105962301",
       "title": "Practice JavaScript",
-      "completed": true
-    },
-    {
-      "id": "1737105962302",
-      "title": "Read about React Router",
       "completed": false
     },
     {
       "id": "1737105962303",
       "title": "Write unit tests",
-      "completed": true
-    },
-    {
-      "id": "1737105962304",
-      "title": "Learn TypeScript",
       "completed": false
     },
     {

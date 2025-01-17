@@ -61,7 +61,6 @@ const TodoList = () => {
                         <th>Title</th>
                         <th>Status</th>
                         <th>Actions</th>
-                        <th>view todo</th>
                     </tr>
                 </thead>
                 <tbody>
