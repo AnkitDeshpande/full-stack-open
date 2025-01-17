@@ -1,8 +1,53 @@
 {
   "todos": [
     {
-      "id": 1,
-      "title": "learn react",
+      "id": "1737105962298",
+      "title": "Learn React",
+      "completed": false
+    },
+    {
+      "id": "1737105962299",
+      "title": "Build a Todo App",
+      "completed": false
+    },
+    {
+      "id": "1737105962300",
+      "title": "Study Redux",
+      "completed": false
+    },
+    {
+      "id": "1737105962301",
+      "title": "Practice JavaScript",
+      "completed": true
+    },
+    {
+      "id": "1737105962302",
+      "title": "Read about React Router",
+      "completed": false
+    },
+    {
+      "id": "1737105962303",
+      "title": "Write unit tests",
+      "completed": true
+    },
+    {
+      "id": "1737105962304",
+      "title": "Learn TypeScript",
+      "completed": false
+    },
+    {
+      "id": "1737105962305",
+      "title": "Build a portfolio website",
+      "completed": false
+    },
+    {
+      "id": "1737105962306",
+      "title": "Create a React project",
+      "completed": true
+    },
+    {
+      "id": "1737105962308",
+      "title": "Explore Next.js",
       "completed": false
     }
   ]

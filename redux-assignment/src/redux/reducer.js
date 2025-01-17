@@ -1,22 +1,23 @@
-import { ADD_TODO, DELETE_TODO, UPDATE_STATUS } from "./actionType";
+import { ADD_TODO, DELETE_TODO, SET_TODOS, UPDATE_STATUS } from "./actionType";
 
-export const todoReducer = (store, { type, payload }) => {
-  switch (type) {
-    case ADD_TODO:
-      return { ...store, todos: [...store.todos, payload] };
-    case UPDATE_STATUS:
-      return {
-        ...store,
-        todos: store.todos.map((todo) => {
-          return todo.id === payload ? (todo.status = !todo.status) : todo;
-        }),
-      };
-    case DELETE_TODO:
-      return {
-        ...store,
-        todos: store.todos.filter((todo) => todo.id !== payload),
-      };
-    default:
-      store;
-  }
+
+const initialState = [];
+
+export const todoReducer = (state = initialState, action) => {
+   switch (action.type) {
+      case SET_TODOS:
+         console.log(action.payload);
+         return action.payload;
+      case ADD_TODO:
+         return [...state, action.payload];
+      case DELETE_TODO:
+         return state.filter((todo) => todo.id !== action.payload);
+      case UPDATE_STATUS:
+         return state.map((todo) =>
+            todo.id === action.payload ? { ...todo, completed: !todo.completed } : todo
+         );
+      default:
+         return state;
+   }
 };
+
