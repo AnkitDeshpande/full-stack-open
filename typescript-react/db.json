@@ -1,0 +1,29 @@
+{
+    "todos": [
+        {
+            "id": 1,
+            "title": "Buy groceries",
+            "status": false
+        },
+        {
+            "id": 2,
+            "title": "Complete project report",
+            "status": true
+        },
+        {
+            "id": 3,
+            "title": "Call the plumber",
+            "status": false
+        },
+        {
+            "id": 4,
+            "title": "Schedule a meeting with the team",
+            "status": true
+        },
+        {
+            "id": 5,
+            "title": "Plan weekend trip",
+            "status": false
+        }
+    ]
+}
