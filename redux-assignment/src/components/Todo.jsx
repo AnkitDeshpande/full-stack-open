@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { addTodo } from "../redux/action";
+import { getTodos } from "../redux/action";
 
 const Todo = () => {
     const API_URL = `http://localhost:3000/todos`;
@@ -20,10 +20,10 @@ const Todo = () => {
             completed: false,
         };
 
-        axios.post(API_URL, data);
+        axios.post(API_URL, data)
+            .then(() => setText(""))
+            .then(() => dispatch(getTodos()))
 
-        dispatch(addTodo(data));
-        setText("");
     };
 
     return (

@@ -1,13 +1,15 @@
 import axios from "axios";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router";
+import { getTodos, sortTodos } from "../redux/action";
 
 const TodoList = () => {
     const API_URL = `http://localhost:3000/todos`;
-    const todos = useSelector((state) => state.todos);
+    const todos = useSelector((state) => state.todos.todos);
     const dispatch = useDispatch();
     const navigate = useNavigate();
+    const [sortOption, setSortOption] = useState('title');
     const fetchTodos = async () => {
         try {
             const { data } = await axios.get(API_URL);
@@ -44,17 +46,27 @@ const TodoList = () => {
         }
     };
 
-    const handleOnClickView = (id) => {
-        navigate(`/todo/:${id}`)
-    }
+    const handleSortChange = (event) => {
+        dispatch(sortTodos(event.target.value))
+    };
+
+    // const handleOnClickView = (id) => {
+    //     navigate(`/todo/:${id}`)
+    // }
 
     useEffect(() => {
-        fetchTodos();
+        dispatch(getTodos())
     }, []);
 
     return (
         <div>
             <h1>Todo List</h1>
+            <select value={sortOption} onChange={handleSortChange}>
+                <option value="id">Sort by id</option>
+                <option value="title">Sort by Title</option>
+                <option value="completed">Sort by Completion Status</option>
+                <option value="date">Sort by Date</option>
+            </select>
             <table border="1">
                 <thead>
                     <tr>

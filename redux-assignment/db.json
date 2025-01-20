@@ -3,36 +3,21 @@
     {
       "id": "1737105962299",
       "title": "Build a Todo App",
-      "completed": true
-    },
-    {
-      "id": "1737105962300",
-      "title": "Study Redux",
-      "completed": true
+      "completed": false
     },
     {
       "id": "1737105962301",
       "title": "Practice JavaScript",
-      "completed": false
-    },
-    {
-      "id": "1737105962303",
-      "title": "Write unit tests",
-      "completed": false
-    },
-    {
-      "id": "1737105962305",
-      "title": "Build a portfolio website",
-      "completed": false
-    },
-    {
-      "id": "1737105962306",
-      "title": "Create a React project",
       "completed": true
     },
     {
-      "id": "1737105962308",
-      "title": "Explore Next.js",
+      "id": "1737105962303",
+      "title": "Write Unit Tests",
+      "completed": true
+    },
+    {
+      "id": 1737363287671,
+      "title": "LEarn typescript",
       "completed": false
     }
   ]
